@@ -21,21 +21,24 @@
 }
 
 body {
-    width: 1280px;
+    height: 700px;
     background: #080808;
 }
 
-#rectangle {
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
     display: flex;
     align-items: center;
-    width: 1110px;
-    height: 70px;
-    margin-left: 85px;
+    height: 70px; 
     background: #1B1B1B;
     border-radius: 0px 0px 8px 8px;
 }
 
-#top-menu {
+.top-menu {
     display: flex;
     gap: 70px;
     margin-left: 95px;
@@ -44,27 +47,33 @@ body {
     font-size: var(--font-size-14);  
 }
 
-#social-media {
+.social-media {
     display: flex;
     gap: 25px;
     margin-left: 95px;
 }
 
+.menu-items {
+    cursor: pointer;
+}
+
 .linkedin {
     margin-bottom: 3.5%;
+    cursor: pointer;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
+.behance, .twitter {
+    cursor: pointer;
 }
+
+.content {
+    display: flex;
+} 
 
 .header-text {
-    float: left;
     width: 538px;
     height: 247px;
-    margin-left: 180px;
-    margin-top: 131px;
+    margin: 131px  0  0 95px;
 }
 
 .heading {
@@ -118,30 +127,33 @@ body {
     margin-left: 64px;
 }
 
-.worked {
-    width: 93px;
-    height: 18px;
-    color: #FFFFFF;
-    margin-top: 109px;
-    font-family: var(--font-idm);  
-    font-size: var(--font-size-14); 
+.photo {
+    width: 350px;
+    height: 350px;
+    margin: 80px 0 0 32px;
 }
 
-#photo {
-    float: left;
-    margin-top: 80px;
-    margin-left: 32px;
-    transform-origin: center;
-}
-
-#photo:hover {
+.photo:hover {
     animation: photo-animation linear 4s infinite;
 }
 
-.photo {
-    display: flex;
-    float: left;
+.photo > img{
+    transform-origin: center;
+
     border-radius: 50%;
+}
+
+#footer {
+    margin: 57px 0 0 0;
+}
+
+.footer-title {
+    width: 93px;
+    height: 18px;
+    color: #FFFFFF;
+    margin: 0 0 0 95px;
+    font-family: var(--font-idm);  
+    font-size: var(--font-size-14); 
 }
 
 .clients-logos {
@@ -149,26 +161,17 @@ body {
     flex-direction: row;
     width: 920px;
     height: 60px;
-    margin-top: 20px;
+    margin: 20px 0 0 95px;
     gap: 30px;
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 160px;
     height: 60px;
     border: 1px solid #1B1B1B;
     border-radius: 6px;
-    display: flex;
-    align-items: center;
-    padding-left: 39p;
-}
-
-.clickup {
-    opacity: 0.3;
-    transform: rotate(0deg);
-}
-
-#home, #case-studies, #testimonials, #recent-work, #about-me, .linkedin, .behance, .twitter{
     cursor: pointer;
 }
-
