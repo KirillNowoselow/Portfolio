@@ -22,6 +22,15 @@
     }
 }
 
+h1 {
+    font-family: var(--font-ralevay);
+    color: #080808;
+    font-weight: 800;
+    font-size: 34px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -151,9 +160,6 @@ button:active {
     font-style: normal;
     font-size: 16px;
     color: #FFFFFF;
-}
-
-.photo {
 }
 
 .photo:hover {
@@ -319,6 +325,50 @@ button:active {
     max-width: 445px;
     border-radius: 6px; 
 }
+
+.reviews {
+    background: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reviews > .container > h1{
+    color: #ffffff;
+    margin: 80px 0 10px 0;
+}
+
+.reviews > .container > p {
+    margin: 0 180px;
+}
+
+.reviews-blocks {
+    display: flex;
+    flex-flow: wrap;
+    margin: 60px 0 0 0;
+    text-align: left;
+
+}
+
+.reviews-block {
+    max-width: 445px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.reviews-block > .text {
+    margin: 30px 0 0 39px;
+}
+
+.reviews-block > h1 {
+    margin: 30px 0 0 45px;
+    color: #FFFFFF;
+    font-size: 18px;
+
+}
+
+
 
 
 @media screen and (max-width: 940px) {
