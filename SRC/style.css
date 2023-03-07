@@ -333,18 +333,18 @@ button:active {
     padding: 80px 0;
 }
 
-.title-block {
+.title-block {    
     max-width: 570px;
     text-align: center;
 }
 
 .title-block > h1 {
-    color: #ffffff;
+    
     margin-bottom: 10px;
 }
 
-.reviews > .container {
-    padding: 0;
+.reviews > .container > .title-block > h1 {
+    color: #FFFFFF;
 }
 
 .reviews-blocks {
@@ -394,6 +394,57 @@ button:active {
 .reviews-block > .client > h1 {
     color: #FFFFFF;
     font-size: 18px;
+}
+
+.recent-work {
+    padding: 80px 0;
+}
+
+.recent-work-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    column-gap: 25px;
+    margin: 45px 0 0 0;
+}
+
+.recent-work-block > img {
+    border-radius: 6px;
+}
+
+.recent-work-block {
+    max-width: 445px;
+}
+.recent-work-block > .heading {
+    margin: 30px 0 20px 0;
+}
+
+.recent-work-block > .text {
+    max-width: 421px;
+}
+
+.recent-work-blocks > button {
+    position: absolute;
+    padding: 10px 12.5px;
+    background-color: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.next {
+    right: -100px;
+    bottom: 250px;
+}
+
+.back {
+    left: -100px;
+    bottom: 250px;
+}
+
+.next > img {
+    rotate: 180deg;
 }
 
 
