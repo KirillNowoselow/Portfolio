@@ -24,9 +24,13 @@
 
 h1 {
     font-family: var(--font-ralevay);
-    color: #080808;
+    color: #FFFFFF;
     font-weight: 800;
     font-size: 34px;
+}
+
+.h1-black {
+    color: #080808;
 }
 
 .container {
@@ -140,6 +144,7 @@ header > .container {
 button {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-top: 30px;
     padding: 21px 64px;
@@ -150,6 +155,10 @@ button {
     box-shadow: 0px 5px 30px rgba(63, 142, 0, 0.5);
     border-radius: 4px;
     cursor: pointer;
+}
+
+button > .text {
+    color: #FFFFFF;
 }
 
 button:hover {
@@ -218,14 +227,6 @@ button:active {
     align-items: center;
 }
 
-.case-studies > h1 {
-    font-family: var(--font-ralevay);
-    color: #080808;
-    font-weight: 800;
-    font-size: 34px;
-    height: 40px;
-    margin-bottom: 10px;
-}
 
 .case-studies > p {
     margin: 0 175px 0 175px;
@@ -439,7 +440,64 @@ button:active {
     rotate: 180deg;
 }
 
+.request {
+    background: #080808;
+    padding: 80px 0;
+}
 
+.form {
+    margin: 20px 0 0 0;
+}
+
+.form > p {
+    color: #FFFFFF;
+    margin: 20px 0 5px 0;
+}
+
+input {
+    font-family: var(--font-idm);
+    padding: 10px;
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-size: 12px;
+    font-family: var(--font-idm);
+}
+
+textarea {
+    font-family: var(--font-idm);
+    padding: 10px;
+    width: 350px;
+    height: 120px;
+    border: none;
+    border-radius: 4px;
+}
+
+textarea::placeholder {
+    font-size: 12px;
+    font-family: var(--font-idm);
+}
+
+.message {
+    height: 120px;
+}
+
+.submit {
+    min-width: 350px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100wh;
+    height: 70px;
+    background: #1B1B1B;
+}
 
 @media screen and (max-width: 1200px) {
     .container {
@@ -546,5 +604,18 @@ button:active {
 @media screen and (max-width: 405px) {
     .block > img {
         width: 290px;
+    }
+
+    input {
+        width: 280px; 
+    }
+
+    textarea {
+        width: 280px;  
+    }
+
+    .submit {
+        min-width: 280px;
+        height: 50px;
     }
 }
