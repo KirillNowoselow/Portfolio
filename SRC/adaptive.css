@@ -1,0 +1,136 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .recent-work-blocks {
+        column-gap: 15px;
+    }
+
+    .recent-work img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .menu-items {
+        gap: 55px;
+    }
+    
+    .recent-work img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .photo img {
+        max-width: 300px;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content-text {
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-items{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        row-gap: 10px;
+        height: 230px;
+        width: 180px;
+        top: 0;bottom: 0;left: 0;right: 0;
+        padding: 70px 0 0 22px;
+        z-index: 49;
+        overflow-y: auto;
+        background-color: #1B1B1B;
+        border-radius:  0  0 10px 10px;
+    }
+
+    .menu-burger {
+        display: flex;
+        position: fixed;
+    }
+
+    .clients {
+        text-align: center;
+    }
+
+    .clients-logos {
+        justify-content: center;
+    }
+
+    .block > img {
+        width: 400px;
+    }
+
+    header > .container {
+        justify-content: space-between;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .recent-work img {
+        max-width: 370px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .block {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .case-studies > p {
+        margin: 0 0 30px 0;
+    }
+
+    .block-text2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .top-menu {
+        font-size: 10px;
+    }
+
+    .recent-work img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .block > img {
+        width: 290px;
+    }
+
+    input {
+        width: 280px; 
+    }
+
+    textarea {
+        width: 280px;  
+    }
+
+    .submit {
+        min-width: 280px;
+        height: 50px;
+    }
+}
